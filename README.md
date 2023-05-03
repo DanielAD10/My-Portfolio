@@ -47,9 +47,7 @@
 
 > This is the first stage of the Project so there is no specific key feature.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Nav-bar]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,88 +71,36 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 VSCode, Browser like Chrome
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
 ### Setup
 
 Clone this repository to your desired folder:
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
-  
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
 ### Install
 
 Install this project with:
 cd my-project
 code .
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
 To run the project, click the right click on the html file and choose "Open in default browser" 
 or  just copy the project link and paste it in the browser
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
 ### Run tests
 
 To run tests, run the following command:
 This is the trial version so we don't need run tests
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
 ### Deployment
 
 This is trial version so you can't deploy this.
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -169,8 +115,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [Key features] **[Update key features]**
 - [Desktop View] **[Desktop View]**
@@ -201,8 +145,6 @@ If you like this project..., let me know the features you want to add in it.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-
 
 > I would like to thank you all the people who test my project.
 
