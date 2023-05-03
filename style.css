@@ -1,3 +1,81 @@
-h1 {
-  color: cornflowerblue;
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* Template body */
+body {
+  font-family: 'Inter';
+  color: #172B4D;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav-bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bar-btn {
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+
+.section-container { 
+  overflow-y: auto;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+}
+
+.primary-text {
+  color: #172B4D;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 70px;
+  line-height: 52px;
+}
+.second-text {
+  color: #36B37E;
+}
+.text-container {
+  margin: 10px;
+  padding: 10px;
+}
+.third-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+} 
+
+.btn {
+  color: #172b4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 30px;
 }
