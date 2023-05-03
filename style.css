@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* Template body */
+body {
+  font-family: 'Inter', Times, serif;
+  color: #172b4d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav-bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bar-btn {
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+
+.section-container {
+  overflow-y: auto;
+  background: url(assets/images/background.svg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.primary-text {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 70px;
+  line-height: 52px;
+}
+
+.second-text {
+  color: #36b37e;
+}
+
+.text-container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.third-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.btn {
+  color: #172b4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 30px;
+}
