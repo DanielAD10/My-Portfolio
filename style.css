@@ -83,9 +83,7 @@ body {
 
 /* Works Section */
 .section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   padding: 50px 24px;
   gap: 58px;
 }
@@ -111,6 +109,8 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
@@ -163,6 +163,11 @@ body {
   margin: 30px;
 }
 
+.card-btn:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
 .about-me-1 {
   margin-top: 0;
   flex: none;
@@ -185,6 +190,8 @@ body {
 
 .logo {
   margin-top: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .box {
