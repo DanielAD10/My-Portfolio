@@ -51,11 +51,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Live Demo is not available.
+Live Demo is not available. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
