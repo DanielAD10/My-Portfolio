@@ -136,11 +136,16 @@ body {
 }
 
 .list-box {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: inline-block;
   list-style: none;
   align-items: center;
   gap: 8px;
+}
+
+.float {
+  float: left;
 }
 
 .list-items {
@@ -151,6 +156,7 @@ body {
   letter-spacing: 0.03em;
   padding: 10px;
   border-radius: 4px;
+  margin-right: 5px;
 }
 
 .card-btn {
