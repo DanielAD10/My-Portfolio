@@ -285,7 +285,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #60c095;
   border-radius: 4px;
-  font-family: 'Inter','Times New Roman', Times;
+  font-family: 'Inter', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
