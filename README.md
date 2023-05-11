@@ -51,14 +51,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Live Demo is not available. -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -116,9 +108,10 @@ This is trial version so you can't deploy this.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Key features] **[Update key features]**
-- [Desktop View] **[Desktop View]**
-- [Some projects for my portfolio] **[Portfolio]**
+- [Structured] 
+- [Desktop View] 
+- [Responsive] 
+- [User friendly]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
