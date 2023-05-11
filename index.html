@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;500;600&family=Poppins&family=Roboto:wght@300;400;700&display=swap">
 </head>
 <body class="container">
     <header>
         <nav class="navbar">
+            <ul class="navbar-des">
+                <li class="navbar-des-items"><a href="#">Portfolio</a></li>
+                <li class="navbar-des-items"><a href="#">About</a></li>
+                <li class="navbar-des-items"><a href="#">Contact</a></li>
+            </ul>
             <button class="bar-btn"><img src="assets/images/menu.svg" alt="Menu"></button>
         </nav>
     </header>
-    <main class="background-image">
+    <main class="background-image main-container">
         <section class="headline-container">
-            <h1 class="primary-text">Hey there. <br>
+            <h2 class="primary-text">Hey there.
                 I’m Daniel. <br>
                 <span class="second-text">I’m a software developer</span>
-            </h1>     
+            </h2>     
             <div class="text-container">
                 <p class="third-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                     don’t hesitate to contact me.</p>
@@ -31,10 +35,10 @@
                 <li><img src="assets/images/github.svg" alt="github logo"></li>
                 <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
             </ul>
+            <div class="btn">
+                <img src="assets/images/normalbottun.svg" alt="normalbottun">
+            </div>
         </section>
-        <div class="btn">
-            <img src="assets/images/normalbottun.svg" alt="normalbottun">
-        </div>
         <section class="section-container">
             <div class="text-container">
                 <h2 class="primary-text work-text">My Recent Works</h2>
@@ -177,8 +181,8 @@
                 </div>
             </div>
         </section>
-        <section class="section-container contact-container">
-            <div class="text-container">
+        <section class="section-container contact-container" id="contact">
+            <div class="contact-text-container">
                 <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
             <form action="https://formspree.io/f/mgebqwdz" method="POST" class="contact-form">
@@ -191,18 +195,16 @@
                 <p>adamsdaniel171@gmail.com</p>
             </div>
         </section>
-        <div>
-            <ul class="social-icons">
-                <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
-                <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
-                <li><img src="assets/images/medium.svg" alt="medium logo"></li>
-                <li><img src="assets/images/github.svg" alt="github logo"></li>
-                <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
-            </ul>
-        </div>
     </main>
     <footer class="footer">
-        <img src="assets/images/footer-bar.svg" alt="Footer">
+        <ul class="social-icons">
+            <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
+            <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
+            <li><img src="assets/images/medium.svg" alt="medium logo"></li>
+            <li><img src="assets/images/github.svg" alt="github logo"></li>
+            <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
+        </ul>
+        <img class="footer-bar" src="assets/images/footer-bar.svg" alt="Footer">
     </footer>
 </body>
 </html>

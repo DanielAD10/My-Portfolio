@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;400;500;600&family=Poppins&family=Roboto:wght@300;400;700&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -16,24 +18,31 @@ body {
   color: #172b4d;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (max-width: 768px){
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* nav-bar */
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
-}
+  /* nav-bar */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+  }
 
-.bar-btn {
-  border: none;
-  background-color: white;
-  padding: 10px;
+  .navbar-des {
+    display: none;
+  }
+
+  .bar-btn {
+    border: none;
+    background-color: white;
+    padding: 10px;
+  }
 }
 
 .background-image {
@@ -255,6 +264,10 @@ body {
   padding-top: 0;
 }
 
+.contact-text-container {
+  text-align: center;
+}
+
 .contact-text {
   margin-top: 0;
 }
@@ -310,8 +323,91 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    margin: 0 100px;
+  }
+
+  .navbar-des {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .navbar-des-items {
+    padding: 10px;
+    margin: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .navbar-des-items a {
+    text-decoration: none;
+    color: #344563;
+  }
+  
+  .navbar button {
+    display: none;
+  }
+
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 160px 0px;
+    gap: 24px;
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  /* Recent Works */
+  .text-container img {
+    display: none;
+  }
+
+  .card-workflow {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+  }
+
+  .contact-text-container {
+    grid-column: 1;
+    height: 256px;
+    text-align: center;
+  }
+
+  .contact-form {
+    grid-column: 2/span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 650px;
+    height: 330px;
+  }
+
+  .contact-text {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .mail-container, 
+  .footer-bar {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 150px;
+  }
 }
