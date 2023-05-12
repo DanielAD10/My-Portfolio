@@ -116,6 +116,10 @@ body {
   border-radius: 8px;
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
+
 .text-box {
   border-radius: 8px;
   background: white;
@@ -197,6 +201,11 @@ body {
   margin-top: 16px;
   display: flex;
   justify-content: center;
+  animation: logo 3s 1;
+}
+
+@keyframes logo {
+  to { transform: rotate(360deg); }
 }
 
 .box {
@@ -257,6 +266,10 @@ body {
 
 .contact-text {
   margin-top: 0;
+}
+
+.contact-text:hover {
+  transform: translate(10%, 5%);
 }
 
 .contact-form {

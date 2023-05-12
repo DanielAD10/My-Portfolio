@@ -100,6 +100,12 @@ This is trial version so you can't deploy this.
 - Twitter: [@Daniel83948350](https://twitter.com/Daniel83948350)
 - LinkedIn: [daniel-adams-8856a1239/](https://www.linkedin.com/in/daniel-adams-8856a1239/)
 
+👤 **Author2**
+
+- GitHub: [@rcniyigena](https://github.com/githubhandle)
+- Twitter: [@EricNiyigena6](https://twitter.com/EricNiyigena6)
+- LinkedIn: [Eric Niyigena](https://www.linkedin.com/in/eric-niyigena250/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,6 +118,7 @@ This is trial version so you can't deploy this.
 - [Desktop View] 
 - [Responsive] 
 - [User friendly]
+- [Animations]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
