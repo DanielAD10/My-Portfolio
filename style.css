@@ -411,7 +411,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
   .contact-form {
     grid-column: 2/span 2;
     display: flex;
@@ -420,7 +420,7 @@ body {
     width: 650px;
     height: 330px;
   }
-  
+
   .contact-text {
     text-align: center;
     font-size: 30px;
