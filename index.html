@@ -18,27 +18,27 @@
             <button class="bar-btn"><img src="assets/images/menu.svg" alt="Menu"></button>
         </nav>
     </header>
-    <main class="background-image main-container">
-        <section class="headline-container">
-            <h2 class="primary-text">Hey there.
-                I’m Daniel. <br>
-                <span class="second-text">I’m a software developer</span>
-            </h2>     
-            <div class="text-container">
-                <p class="third-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don’t hesitate to contact me.</p>
-            </div>
-            <ul class="social-icons">
-                <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
-                <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
-                <li><img src="assets/images/medium.svg" alt="medium logo"></li>
-                <li><img src="assets/images/github.svg" alt="github logo"></li>
-                <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
-            </ul>
-            <div class="btn">
-                <img src="assets/images/normalbottun.svg" alt="normalbottun">
-            </div>
-        </section>
+    <main class="main-container">
+        <section class="headline-container headline-background">
+                <h2 class="primary-text">Hey there.
+                    I’m Daniel. <br>
+                    <span class="second-text">I’m a software developer</span>
+                </h2>     
+                <div class="text-container">
+                    <p class="third-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hesitate to contact me.</p>
+                </div>
+                <ul class="social-icons">
+                    <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
+                    <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
+                    <li><img src="assets/images/medium.svg" alt="medium logo"></li>
+                    <li><img src="assets/images/github.svg" alt="github logo"></li>
+                    <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
+                </ul>
+                <div class="btn">
+                    <img src="assets/images/normalbottun.svg" alt="normalbottun">
+                </div>
+            </section>
         <section class="section-container">
             <div class="text-container">
                 <h2 class="primary-text work-text">My Recent Works</h2>
@@ -120,11 +120,13 @@
             </div>
         </section>
         <section class="section-container">
-            <div class="text-container">
-                <h2 class="primary-text about-me-1">About me</h2>
-                <p class="third-text about-me-2"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don’t hesitate to contact me.</p>
-                <button class="btn card-btn about-me-3">Get my resume</button>
+            <div class="about-me-background" id="about-me">
+                <div class="text-container">
+                    <h2 class="primary-text about-me-1">About me</h2>
+                    <p class="third-text about-me-2"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hesitate to contact me.</p>
+                    <button class="btn card-btn about-me-3">Get my resume</button>
+                </div>
             </div>
             <div class="card-workflow">
                 <div class="card">
@@ -181,20 +183,22 @@
                 </div>
             </div>
         </section>
-        <section class="section-container contact-container" id="contact">
-            <div class="contact-text-container">
-                <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            </div>
-            <form action="https://formspree.io/f/mgebqwdz" method="POST" class="contact-form">
-                <input type="text" name="name" class="contact-form-input" maxlength="30" placeholder="Full name" required>
-                <input type="email" name="email" class="contact-form-input" placeholder="Email address" required>
-                <textarea name="message" cols="30" rows="4" maxlength="500" class="contact-form-message" placeholder="Hey I’d like to connect to..."></textarea>
-                <button type="submit" class="card-btn submit-btn" value="Submit">Get in touch</button>
-            </form>
-            <div class="mail-container">
-                <p>adamsdaniel171@gmail.com</p>
-            </div>
-        </section>
+        <div class="contact-background">
+            <section class="section-container contact-container" id="contact">
+                <div class="contact-text-container">
+                    <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+                </div>
+                <form action="https://formspree.io/f/mgebqwdz" method="POST" class="contact-form">
+                    <input type="text" name="name" class="contact-form-input" maxlength="30" placeholder="Full name" required>
+                    <input type="email" name="email" class="contact-form-input" placeholder="Email address" required>
+                    <textarea name="message" cols="30" rows="4" maxlength="500" class="contact-form-message" placeholder="Hey I’d like to connect to..."></textarea>
+                    <button type="submit" class="card-btn submit-btn" value="Submit">Get in touch</button>
+                </form>
+                <div class="mail-container">
+                    <p>adamsdaniel171@gmail.com</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <ul class="social-icons">

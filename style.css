@@ -43,15 +43,27 @@ body {
     background-color: white;
     padding: 10px;
   }
-}
 
-.background-image {
-  background: url(assets/images/background.svg) no-repeat fixed center;
-  background-size: cover;
-}
+  .headline-container {
+    overflow-y: auto;
+  }
 
-.headline-container {
-  overflow-y: auto;
+  .headline-background {
+    background: url(assets/images/background.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  .about-me-background {
+    background: url(assets/images/about-me.svg) no-repeat content-box;
+    background-size: contain;
+  }
+
+  .contact-background {
+    background: url(assets/images/contact-form.svg) no-repeat content-box;
+    background-size: contain;
+    background-position-x: right;
+    width: 20%;
+  }
 }
 
 .primary-text {
@@ -330,6 +342,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    background: url(assets/images/all-rounder.svg) no-repeat;
+    background-size: contain;
+  }
+
   .main-container {
     margin: 0 100px;
   }
@@ -371,6 +388,10 @@ body {
     margin: 0 auto;
   }
 
+  .section-container #about-me {
+    padding: 0;
+  }
+
   /* Recent Works */
   .text-container img {
     display: none;
@@ -385,9 +406,12 @@ body {
   .contact-text-container {
     grid-column: 1;
     height: 256px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   .contact-form {
     grid-column: 2/span 2;
     display: flex;
@@ -396,8 +420,9 @@ body {
     width: 650px;
     height: 330px;
   }
-
+  
   .contact-text {
+    text-align: center;
     font-size: 30px;
     line-height: 50px;
   }
