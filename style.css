@@ -24,6 +24,11 @@ body {
     flex-direction: column;
   }
 
+  .main-container {
+    background: url(assets/images/mobile-back.svg) no-repeat center;
+    background-size: cover;
+  }
+
   /* nav-bar */
   .navbar {
     display: flex;
@@ -46,23 +51,6 @@ body {
 
   .headline-container {
     overflow-y: auto;
-  }
-
-  .headline-background {
-    background: url(assets/images/background.svg) no-repeat center;
-    background-size: contain;
-  }
-
-  .about-me-background {
-    background: url(assets/images/about-me.svg) no-repeat content-box;
-    background-size: contain;
-  }
-
-  .contact-background {
-    background: url(assets/images/contact-form.svg) no-repeat content-box;
-    background-size: contain;
-    background-position-x: right;
-    width: 20%;
   }
 }
 
@@ -135,10 +123,6 @@ body {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-}
-
-.card:hover {
-  transform: scale(1.1);
 }
 
 .text-box {
@@ -222,11 +206,6 @@ body {
   margin-top: 16px;
   display: flex;
   justify-content: center;
-  animation: logo 3s 1;
-}
-
-@keyframes logo {
-  to { transform: rotate(360deg); }
 }
 
 .box {
@@ -293,10 +272,6 @@ body {
   margin-top: 0;
 }
 
-.contact-text:hover {
-  transform: translate(10%, 5%);
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -356,8 +331,8 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background: url(assets/images/all-rounder.svg) no-repeat;
-    background-size: contain;
+    background: url(assets/images/all-rounder.svg) no-repeat center;
+    background-size: cover;
   }
 
   .main-container {

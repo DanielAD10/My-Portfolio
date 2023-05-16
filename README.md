@@ -13,7 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  <!-- - [🚀 Live Demo](#live-demo) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -86,7 +86,9 @@ This is the trial version so we don't need run tests
 
 ### Deployment
 
-This is trial version so you can't deploy this.
+The project is deployed at the following link...
+
+ https://danielad10.github.io/My-Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
