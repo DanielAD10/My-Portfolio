@@ -16,9 +16,17 @@
                 <li class="navbar-des-items"><a href="#">About</a></li>
                 <li class="navbar-des-items"><a href="#">Contact</a></li>
             </ul>
-            <button id="nav-btn" class="bar-btn" onclick="showAlert()"><img src="assets/images/menu.svg" alt="Menu"></button>
+            <button id="nav-btn" class="bar-btn" onclick="openMobileMenu()">
+                <img src="assets/images/menu.svg" alt="Menu">
+            </button>
+
         </nav>
     </header>
+    <!-- mobile-menu -->
+    <div id="mobile-menu" class="hidden">
+        <button id="close-btn" onclick="closeMobileMenu()">X</button>
+        <!-- Content of the mobile menu goes here -->
+    </div>
     <main class="main-container">
         <section class="headline-container headline-background">
                 <h2 class="primary-text">Hey there.
