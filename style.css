@@ -79,11 +79,21 @@ body {
    color: black;
    font-size: 16px;
    cursor: pointer;
+  display: none;
  }
+ 
+#mobile-menu.hidden {
+  display: none;
+}
 
- .hidden {
+#close-btn {
+  /* ... */
+  display: block;
+  /* Show the close button */
+}
+ /* .hidden {
    display: none;
- }
+ } */
      /* Mobile-menu  END*/
 }
 

@@ -1,9 +1,9 @@
 function openMobileMenu() {
   var mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.remove('hidden');
+  mobileMenu.style.display = 'flex'; // Show the mobile menu
 }
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.add('hidden');
+  mobileMenu.style.display = 'none'; // Hide the mobile menu
 }
