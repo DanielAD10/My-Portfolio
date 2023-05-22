@@ -14,6 +14,7 @@ html {
 
 :root {
   --close-icon-color: #67798e;
+  --mobile-menu-items-color: #3a4a42;
 }
 
 /* Template body */
@@ -90,10 +91,10 @@ body {
     display: none;
   }
 
-  /* Show the close button */
+  .mobile-menu-list ul {
+    color: var(--mobile-menu-items-color);
+  }
 }
-
-/* Mobile-menu  END */
 
 .primary-text {
   color: #172b4d;
