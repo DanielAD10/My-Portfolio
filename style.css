@@ -81,7 +81,7 @@ body {
    cursor: pointer;
   display: none;
  }
- 
+
 #mobile-menu.hidden {
   display: none;
 }
@@ -91,9 +91,6 @@ body {
   display: block;
   /* Show the close button */
 }
- /* .hidden {
-   display: none;
- } */
      /* Mobile-menu  END*/
 }
 
