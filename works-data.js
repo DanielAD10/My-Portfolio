@@ -1,4 +1,4 @@
-const worksdata = [
+const workscards = [
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
@@ -42,4 +42,4 @@ const worksdata = [
     projectLink: '',
   },
 ];
-export default worksdata;
+export default workscards;
