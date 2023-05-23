@@ -2,9 +2,9 @@ import workcards from './works-data.js';
 import aboutcards from './about-data.js';
 
 // itirate through the worksdata
-// for each card in workscards loop will go here
+// for each card in workscards  loop and access the objects values
 // itirate through the aboutdata
-// for each card in aboutcards loop will go here
+// for each card in aboutcards loop and access the objects values
 const openMobileMenu = function openMobileMenuHandler() {
   const mobileMenu = document.getElementById('mobile-menu');
   mobileMenu.style.display = 'flex'; // Show the mobile menu
