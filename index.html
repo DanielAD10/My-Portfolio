@@ -33,7 +33,6 @@
             <i class="fas fa-times"></i>
         </button>
 
-
         <div class="mobile-menu-container">
             <!-- Content of the mobile menu -->
             <ul class="mobile-menu-list">
@@ -45,6 +44,20 @@
         </div>
 
     </div>
+    <!-- Details view -->
+<div id="detail-container" class="hidden">
+    <button id="close-btn" onclick="closeDetailView()">
+        <i class="fas fa-times"></i>
+    </button>
+
+
+    <div>
+        <!-- Content of the mobile menu -->
+       <p>Details view</p>
+
+    </div>
+</div>
+
     <main class="main-container">
         <section class="headline-container headline-background">
             <h2 class="primary-text">Hey there.
@@ -72,7 +85,6 @@
                 <h2 class="primary-text work-text">My Recent Works</h2>
                 <img src="assets/images/indicator.svg" alt="">
             </div>
-            <!-- display cards and card data from workscards itiration: For each card of workscards -->
             <div class="card-workflow">
                 <div class="card">
                     <div class="text-box">
@@ -83,10 +95,47 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
                
+             
+                <div class="card">
+                    <div class="text-box">
+                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
+                        <ul class="list-box">
+                            <li class="list-items">Ruby on Rails</li>
+                            <li class="list-items">CSS</li>
+                            <li class="list-items">JavaScript</li>
+                            <li class="list-items">HTML</li>
+                        </ul>
+                        <button class="btn card-btn">See Project</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text-box">
+                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
+                        <ul class="list-box">
+                            <li class="list-items">Ruby on Rails</li>
+                            <li class="list-items">CSS</li>
+                            <li class="list-items">JavaScript</li>
+                            <li class="list-items">HTML</li>
+                        </ul>
+                        <button class="btn card-btn">See Project</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text-box">
+                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
+                        <ul class="list-box">
+                            <li class="list-items">Ruby on Rails</li>
+                            <li class="list-items">CSS</li>
+                            <li class="list-items">JavaScript</li>
+                            <li class="list-items">HTML</li>
+                        </ul>
+                        <button class="btn card-btn">See Project</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section-container"  id="aboutme-section">
@@ -96,7 +145,7 @@
                     <p class="third-text about-me-2"> I can help you build a product , feature or website Look through
                         some of my work and experience! If you like what you see and have a project you need coded,
                         don’t hesitate to contact me.</p>
-                    <button class="btn card-btn about-me-3">Get my resume</button>
+                    <button id="card-btn" class="btn card-btn about-me-3">Get my resume</button>
                 </div>
             </div>
             <div class="card-workflow">
@@ -171,6 +220,7 @@
                 <p>adamsdaniel171@gmail.com</p>
             </div>
         </section>
+       
     </main>
     <footer class="footer">
         <ul class="social-icons">
