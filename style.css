@@ -12,6 +12,11 @@ html {
   margin: 0;
 }
 
+:root {
+  --close-icon-color: #67798e;
+  --mobile-menu-items-color: #3a4a42;
+}
+
 /* Template body */
 body {
   font-family: 'Inter', Times, serif;
@@ -52,6 +57,67 @@ body {
   .headline-container {
     overflow-y: auto;
   }
+
+  /* Mobile-menu */
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f9;
+    z-index: 5;
+  }
+
+  .mobile-menu-container {
+    position: fixed;
+    display: flex;
+    gap: 30px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .close-btn {
+    position: absolute;
+    margin: 10px;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--close-icon-color);
+  }
+
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-left: 10px;
+    padding: 20px;
+    gap: 30px;
+    color: var(--mobile-menu-items-color);
+  }
+
+  .mobile-menu-list-items {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    list-style: none;
+  }
+
+  .mobile-menu-list-items a {
+    text-decoration: none;
+    color: #3a4a42;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .primary-text {
@@ -327,6 +393,10 @@ body {
   align-items: center;
   gap: 20px;
   margin: 8px;
+}
+
+#mobile-menu.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font icon class fa font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body class="container">
     <header>
         <nav class="navbar">
             <ul class="navbar-des">
-                <li class="navbar-des-items"><a href="#">Portfolio</a></li>
-                <li class="navbar-des-items"><a href="#">About</a></li>
-                <li class="navbar-des-items"><a href="#">Contact</a></li>
+                <li class="navbar-des-items"><a href="#recent-works">Portfolio</a></li>
+                <li class="navbar-des-items"><a href="#aboutme-section">About</a></li>
+                <li class="navbar-des-items"><a href="#contact">Contact</a></li>
             </ul>
-            <button class="bar-btn"><img src="assets/images/menu.svg" alt="Menu"></button>
+            <button id="nav-btn" class="bar-btn" onclick="openMobileMenu()">
+                <img src="assets/images/menu.svg" alt="Menu">
+            </button>
+
         </nav>
     </header>
+    <!-- mobile-menu -->
+    <div class="mobile-menu hidden" id="close-btn" onclick="closeMobileMenu()">
+        <div class="mobile-menu-container">
+            <div class="close-btn" onclick="closeMobileMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+            <!-- Content of the mobile menu -->
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-items"><a href="#recent-works"  onclick="closeMobileMenu()">Portfolio</a></li>
+                <li class="mobile-menu-list-items"><a href="#aboutme-section" onclick="closeMobileMenu()">About</a></li>
+                <li class="mobile-menu-list-items"><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <main class="main-container">
         <section class="headline-container headline-background">
-                <h2 class="primary-text">Hey there.
-                    I’m Daniel. <br>
-                    <span class="second-text">I’m a software developer</span>
-                </h2>     
-                <div class="text-container">
-                    <p class="third-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                        don’t hesitate to contact me.</p>
-                </div>
-                <ul class="social-icons">
-                    <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
-                    <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
-                    <li><img src="assets/images/medium.svg" alt="medium logo"></li>
-                    <li><img src="assets/images/github.svg" alt="github logo"></li>
-                    <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
-                </ul>
-                <div class="btn">
-                    <img src="assets/images/normalbottun.svg" alt="normalbottun">
-                </div>
-            </section>
-        <section class="section-container">
+            <h2 class="primary-text">Hey there.
+                I’m Daniel. <br>
+                <span class="second-text">I’m a software developer</span>
+            </h2>
+            <div class="text-container">
+                <p class="third-text"> I can help you build a product , feature or website Look through some of my work
+                    and experience! If you like what you see and have a project you need coded,
+                    don’t hesitate to contact me.</p>
+            </div>
+            <ul class="social-icons">
+                <li><img src="assets/images/twitter.svg" alt="twitter logo"></li>
+                <li><img src="assets/images/linkedin.svg" alt="linkedin logo"></li>
+                <li><img src="assets/images/medium.svg" alt="medium logo"></li>
+                <li><img src="assets/images/github.svg" alt="github logo"></li>
+                <li><img src="assets/images/angellist.svg" alt="angellist logo"></li>
+            </ul>
+            <div class="btn">
+                <img src="assets/images/normalbottun.svg" alt="normalbottun">
+            </div>
+        </section>
+        <section class="section-container" id="recent-works">
             <div class="text-container">
                 <h2 class="primary-text work-text">My Recent Works</h2>
                 <img src="assets/images/indicator.svg" alt="">
@@ -119,11 +142,12 @@
                 </div>
             </div>
         </section>
-        <section class="section-container">
-            <div class="about-me-background" id="about-me">
+        <section class="section-container"  id="aboutme-section">
+            <div class="about-me-background">
                 <div class="text-container">
                     <h2 class="primary-text about-me-1">About me</h2>
-                    <p class="third-text about-me-2"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    <p class="third-text about-me-2"> I can help you build a product , feature or website Look through
+                        some of my work and experience! If you like what you see and have a project you need coded,
                         don’t hesitate to contact me.</p>
                     <button class="btn card-btn about-me-3">Get my resume</button>
                 </div>
@@ -185,12 +209,15 @@
         </section>
         <section class="section-container contact-container" id="contact">
             <div class="contact-text-container">
-                <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+                <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd
+                    like to chat please get in touch.</h2>
             </div>
             <form action="https://formspree.io/f/mgebqwdz" method="POST" class="contact-form">
-                <input type="text" name="name" class="contact-form-input" maxlength="30" placeholder="Full name" required>
+                <input type="text" name="name" class="contact-form-input" maxlength="30" placeholder="Full name"
+                    required>
                 <input type="email" name="email" class="contact-form-input" placeholder="Email address" required>
-                <textarea name="message" cols="30" rows="4" maxlength="500" class="contact-form-message" placeholder="Hey I’d like to connect to..."></textarea>
+                <textarea name="message" cols="30" rows="4" maxlength="500" class="contact-form-message"
+                    placeholder="Hey I’d like to connect to..."></textarea>
                 <button type="submit" class="card-btn submit-btn" value="Submit">Get in touch</button>
             </form>
             <div class="mail-container">
@@ -208,5 +235,6 @@
         </ul>
         <img class="footer-bar" src="assets/images/footer-bar.svg" alt="Footer">
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
