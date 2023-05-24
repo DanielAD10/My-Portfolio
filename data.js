@@ -39,7 +39,7 @@ export const workcards = [
 
 export const aboutcards = [
   {
-    icon: './assets/icons/languages.svg',
+    icon: './assets/images/languages.svg',
     title: 'Language',
     tags: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
   },

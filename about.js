@@ -23,7 +23,7 @@ const generateAboutCardHTML = (aboutcard) => {
 };
 
 const displayAboutCards = () => {
-  const cardWorkflow = document.querySelector('.card-workflow');
+  const cardWorkflow = document.querySelector('#about-workflow'); // Updated container ID
   aboutcards.forEach((aboutcard) => {
     const cardHTML = generateAboutCardHTML(aboutcard);
     cardWorkflow.insertAdjacentHTML('beforeend', cardHTML);
