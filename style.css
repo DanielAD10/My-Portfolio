@@ -613,6 +613,7 @@ body {
   .detail-des {
     z-index: 5;
     background: #c1c7d0;
+    padding: 30px;
     overflow-y: auto;
     display: flex;
     justify-content: center;
@@ -633,6 +634,11 @@ body {
   }
 
   .detail-close-btn-box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    top: calc(50% - 40px / 2 - 497.5px);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
