@@ -33,23 +33,23 @@
             </div>
             <!-- Content of the mobile menu -->
             <ul class="mobile-menu-list">
-                <li class="mobile-menu-list-items"><a href="#recent-works"  onclick="closeMobileMenu()">Portfolio</a></li>
-                <li class="mobile-menu-list-items"><a href="#aboutme-section" onclick="closeMobileMenu()">About</a></li>
-                <li class="mobile-menu-list-items"><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li class="mobile-menu-list-items"><a href="#recent-works" >Portfolio</a></li>
+                <li class="mobile-menu-list-items"><a href="#aboutme-section" >About</a></li>
+                <li class="mobile-menu-list-items"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
     <!-- Details view -->
     <!-- mobile-detail-view -->
-    <div class="detail detail-des hidden" >
+    <div class="detail detail-des hidden">
         <div class="detail-container detail-des-container">
-            <!-- <div class="detail-close-btn-box">
+            <div id="close-card" onclick="closeDetailView()" class="detail-close-btn-box">
                 <img src="assets/images/close-project.svg" alt="Close btn p">
-            </div> -->
-            <div id="close-card" class="mobile-detail-img">
+            </div>
+            <div id="close-card" onclick="closeDetailView()" class="mobile-detail-img">
                 <img src="assets/images/project-img.svg" alt="Project Image">
             </div>
-            <div id="close-card" class="des-detail-img">
+            <div class="des-detail-img">
                 <img src="assets/images/detail-des-img.svg" alt="Project Image">
             </div>
             <!-- Content of the mobile menu -->
@@ -84,19 +84,17 @@
                         <button class="detail-des-btn">See source <img src="assets/images/seeSrc-btn.svg" alt="See Source logo"></button>
                     </div>
                 </div>
-                <ul class="list-box detail-des-list-box">
-                    <li class="list-items">Codekit</li>
-                    <li class="list-items">GitHub</li>
-                    <li class="list-items">JavaScript</li>
-                    <li class="list-items">Bootstrap</li>
-                    <li class="list-items">Terminal</li>
-                    <li class="list-items">Codepen</li>
+                <ul class="detail-des-list-box">
+                    <li class="detail-des-list-items">Codekit</li>
+                    <li class="detail-des-list-items">GitHub</li>
+                    <li class="detail-des-list-items">JavaScript</li>
+                    <li class="detail-des-list-items">Bootstrap</li>
+                    <li class="detail-des-list-items">Terminal</li>
+                    <li class="detail-des-list-items">Codepen</li>
                 </ul>
-                <div class="detail-text-box">
-                    <p class="detail-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+                <div class="detail-des-text-box">
+                    <p class="detail-des-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
                     </p>
                 </div>
             </div>
