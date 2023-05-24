@@ -39,17 +39,17 @@ export const workcards = [
 
 export const aboutcards = [
   {
-    icon: './assets/images/languages.svg',
+    icon: './assets/images/language.svg',
     title: 'Language',
     tags: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
   },
   {
-    icon: './assets/icons/frameworks.svg',
+    icon: './assets/images/framework.svg',
     title: 'Frameworks',
     tags: ['React.js', 'Ruby on Rails', 'RSpec', 'Capybara', 'Selenium'],
   },
   {
-    icon: './assets/icons/skills.svg',
+    icon: './assets/images/skills.svg',
     title: 'Skills',
     tags: [
       'Database Management',
