@@ -40,14 +40,21 @@
         </div>
     </div>
     <!-- Details view -->
-    <div class="detail hidden" id="close-card">
-        <div class="detail-container">
-            <div>
+    <!-- mobile-detail-view -->
+    <div class="detail detail-des hidden" >
+        <div class="detail-container detail-des-container">
+            <!-- <div class="detail-close-btn-box">
+                <img src="assets/images/close-project.svg" alt="Close btn p">
+            </div> -->
+            <div id="close-card" class="mobile-detail-img">
                 <img src="assets/images/project-img.svg" alt="Project Image">
+            </div>
+            <div id="close-card" class="des-detail-img">
+                <img src="assets/images/detail-des-img.svg" alt="Project Image">
             </div>
             <!-- Content of the mobile menu -->
             <div class="detail-text-container">
-                <h3 class="detail-text-header">
+                <h3 class="detail-text-header detail-des-text-header">
                     Keeping track of hundreds of components
                 </h3>
                 <ul class="list-box detail-list-box">
@@ -55,20 +62,48 @@
                     <li class="list-items">CSS</li>
                     <li class="list-items">JavaScript</li>
                 </ul>
+                <div class="detail-text-box">
+                    <p class="detail-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+                    </p>
+                </div>
+                <div class="detail-btn-box">
+                    <button class="detail-btn">See live <img src="assets/images/seeLive-btn.svg" alt="See Live logo"></button>
+                    <button class="detail-btn">See source <img src="assets/images/seeSrc-btn.svg" alt="See Source logo"></button>
+                </div>
             </div>
-            <div class="detail-text-box">
-                <p class="detail-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-                </p>
-            </div>
-            <div class="detail-btn-box">
-                <button class="detail-btn">See live <img src="assets/images/seeLive-btn.svg" alt="See Live logo"></button>
-                <button class="detail-btn">See source <img src="assets/images/seeSrc-btn.svg" alt="See Source logo"></button>
+            <div class="detail-des-text-container">
+                <div class="detail-des-header-box">
+                    <h3 class="detail-des-text-header">
+                        Keeping track of hundreds of components
+                    </h3>
+                    <div class="detail-des-btn-box">
+                        <button class="detail-des-btn">See live <img src="assets/images/seeLive-btn.svg" alt="See Live logo"></button>
+                        <button class="detail-des-btn">See source <img src="assets/images/seeSrc-btn.svg" alt="See Source logo"></button>
+                    </div>
+                </div>
+                <ul class="list-box detail-des-list-box">
+                    <li class="list-items">Codekit</li>
+                    <li class="list-items">GitHub</li>
+                    <li class="list-items">JavaScript</li>
+                    <li class="list-items">Bootstrap</li>
+                    <li class="list-items">Terminal</li>
+                    <li class="list-items">Codepen</li>
+                </ul>
+                <div class="detail-text-box">
+                    <p class="detail-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- mobile-detail-view-end -->
+    
 
     <main class="main-container">
         <section class="headline-container headline-background">
@@ -121,7 +156,7 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -133,7 +168,7 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -145,7 +180,7 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -157,7 +192,7 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -169,7 +204,7 @@
                             <li class="list-items">JavaScript</li>
                             <li class="list-items">HTML</li>
                         </ul>
-                        <button class="btn card-btn">See Project</button>
+                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
                     </div>
                 </div>
             </div>
