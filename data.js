@@ -57,6 +57,21 @@ export const aboutcards = [
       'CLI',
       'Web Development',
       'API Design',
+    ]
+  }
+];
+
+export const detail = [
+  {
+    image: './assets/SnapshootPortfolio.png',
+    title: 'Keeping track of hundreds of components',
+    tags: [
+      'Ruby on Rails',
+      'CSS',
+      'JavaScript'
     ],
-  },
+    text: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+    ]
+  }
 ];

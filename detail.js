@@ -1,13 +1,13 @@
-import { aboutcards } from './data.js';
+import { detail } from './data.js';
 
-const generateAboutCardHTML = (aboutcard) => {
-  const { icon, title, tags } = aboutcard;
+const generateDetailHTML = (detail) => {
+  const { image, title, tags, text } = detail;
   const tagsHTML = tags
-    .map((tag) => `<li class="list-items common-tags-items">${tag}</li>`)
+    .map((tag) => `<li class="list-items">${tag}</li>`)
     .join('');
-  const cardHTML = `
-    <div class="card">
-      <div class="logo">
+  const detailHTML = `
+    <div class="detail">
+      <div class="detail-container">
         <img src="${icon}" alt="${title} logo">
       </div>
       <div class="box">
@@ -19,7 +19,7 @@ const generateAboutCardHTML = (aboutcard) => {
     </div>
   `;
 
-  return cardHTML;
+  return detailHTML;
 };
 
 const displayAboutCards = () => {
