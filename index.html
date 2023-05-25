@@ -40,24 +40,11 @@
         </div>
     </div>
     <!-- Details view -->
-    <!-- mobile-detail-view -->
-    <div class="detail detail-des hidden">
-        <div class="detail-container detail-des-container">
-            <div id="close-card" onclick="closeDetailView()" class="detail-close-btn-box">
-                <img src="assets/images/close-project.svg" alt="Close btn p">
-            </div>
+    <div class="detail detail-des" id="detail-view">
+        <div class="detail-container">
             <div id="close-card" onclick="closeDetailView()" class="mobile-detail-img">
-                <img src="assets/images/project-img.svg" alt="Project Image">
+                <img src="assets/SnapshootPortfolio.png" alt="Project Image">
             </div>
-            <div class="des-detail-img">
-                <img src="assets/images/detail-des-img.svg" alt="Project Image">
-            <div id="close-card" class="mobile-detail-img">
-                <img src="assets/images/project-img.svg" alt="Project Image">
-            </div>
-            <div id="close-card" class="des-detail-img">
-                <img src="assets/images/project-img.svg" alt="Project Image">
-            </div>
-            <!-- Content of the mobile menu -->
             <div class="detail-text-container">
                 <h3 class="detail-text-header detail-des-text-header">
                     Keeping track of hundreds of components
@@ -78,6 +65,14 @@
                     <button class="detail-btn">See live <img src="assets/images/seeLive-btn.svg" alt="See Live logo"></button>
                     <button class="detail-btn">See source <img src="assets/images/seeSrc-btn.svg" alt="See Source logo"></button>
                 </div>
+            </div>
+        </div>
+        <div class="detail-des-container">
+            <div id="close-card" onclick="closeDetailView()" class="detail-close-btn-box">
+                <img src="assets/images/close-project.svg" alt="Close btn p">
+            </div>
+            <div class="des-detail-img">
+                <img src="assets/images/detail-des-img.svg" alt="Project Image">
             </div>
             <div class="detail-des-text-container">
                 <div class="detail-des-header-box">
@@ -104,8 +99,8 @@
                 </div>
             </div>
         </div>
+
     </div>
-    <!-- mobile-detail-view-end -->
     
 
     <main class="main-container">
@@ -135,82 +130,7 @@
                 <h2 class="primary-text work-text">My Recent Works</h2>
                 <img src="assets/images/indicator.svg" alt="">
             </div>
-            <div id="card-workflow" class="card-workflow">
-                <!-- <div class="card">
-                    <div class="text-box">
-                        <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div>
-               
-             
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn" id="card-btn" onclick="openDetailView()">See Project</button>
-                    </div>
-                </div> -->
-            </div>
+            <div id="card-workflow" class="card-workflow"></div>
         </section>
         <section class="section-container"  id="aboutme-section">
             <div class="about-me-background">
@@ -222,62 +142,9 @@
                     <button id="card-btn" class="btn card-btn about-me-3">Get my resume</button>
                 </div>
             </div>
-            <div id="about-workflow" class="card-workflow"></div>
-                <!-- <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/language.svg" alt="Language logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Language</h2>
-                        <ul class="common-tags list-box">
-                            <li class="list-items common-tags-items">JavaScript</li>
-                            <li class="list-items common-tags-items">Ruby</li>
-                            <li class="list-items common-tags-items">HTML</li>
-                            <li class="list-items common-tags-items">CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/framework.svg" alt="Frameworks logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Frameworks</h2>
-                        <ul class="common-tags list-box common-box">
-                            <div class="framework-box">
-                                <li class="list-items common-tags-items">React.js</li>
-                                <li class="list-items common-tags-items">Ruby on Rails</li>
-                                <li class="list-items common-tags-items">RSpec</li>
-                            </div>
-                            <div class="framework-box">
-                                <li class="list-items common-tags-items">Capybara</li>
-                                <li class="list-items common-tags-items">Selenium</li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/skills.svg" alt="Skills logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Skills</h2>
-                        <ul class="common-tags list-box common-box">
-                            <div class="skill-box">
-                                <li class="list-items common-tags-items">Database Management</li>
-                                <li class="list-items common-tags-items">Version Control</li>
-                            </div>
-                            <div class="skill-box">
-                                <li class="list-items common-tags-items">CLI</li>
-                                <li class="list-items common-tags-items">Web Development</li>
-                                <li class="list-items common-tags-items">API Design</li>
-                            </div>
-                        </ul>
-                    </div>
-                </div> -->
-         
+            <div class="card-workflow" id="about-workflow"></div>
         </section>
-        <section class="section-container contact-container" id="contact">
+        <section class="section-container" id="contact">
             <div class="contact-text-container">
                 <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd
                     like to chat please get in touch.</h2>
@@ -307,7 +174,7 @@
         <img class="footer-bar" src="assets/images/footer-bar.svg" alt="Footer">
     </footer>
     <script src="index.js"></script>
-        <script type="module" src="data.js"></script>
+    <script type="module" src="data.js"></script>
     <script type="module" src="works.js"></script>
     <script type="module" src="about.js"></script>
 </body>
