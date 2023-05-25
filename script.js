@@ -11,23 +11,20 @@ const closeMobileMenu = function closeMobileMenuHandler() {
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
 
-//Validate Contact Form
-const form = document.querySelector(".contact-form");
-const name = document.querySelector("#name");
-const email = document.querySelector("#email");
-const message = document.querySelector("#message");
-const error = document.querySelector("#error");
-const errorMessage = "** Please write your email address in lower case **";
+// Validate Contact Form
+const form = document.querySelector('.contact-form');
+const email = document.querySelector('#email');
+const error = document.querySelector('#error');
+const errorMessage = '** Please write your email address in lowercase **';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const userEmail = email.value;
-  if(userEmail !== userEmail.toLowerCase()) {
-    error.style.display = "block";
+  if (userEmail !== userEmail.toLowerCase()) {
+    error.style.display = 'block';
     error.innerHTML = errorMessage;
   } else {
-    error.innerHTML = "";
+    error.innerHTML = '';
     form.submit();
   }
-})
-
+});
