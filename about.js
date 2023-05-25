@@ -12,7 +12,7 @@ const generateAboutCardHTML = (aboutcard) => {
       </div>
       <div class="box">
         <h2 class="text common-text">${title}</h2>
-        <ul class="common-tags list-box common-box">
+        <ul class="list-box">
           ${tagsHTML}
         </ul>
       </div>
