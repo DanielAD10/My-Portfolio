@@ -374,6 +374,12 @@ body {
   width: 100%;
 }
 
+#error {
+  color: #FF6163;
+  display: none;
+  padding: 5px;
+}
+
 .submit-btn {
   margin: 0;
 }
