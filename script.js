@@ -1,30 +1,34 @@
-const openMobileMenu = function openMobileMenuHandler() {
+const openMobileMenuHandler = () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.style.display = 'block'; // Show the mobile menu
 };
 
-const closeMobileMenu = function closeMobileMenuHandler() {
+const closeMobileMenuHandler = () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.style.display = 'none'; // Hide the mobile menu
 };
 
-document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
-document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
+document
+  .getElementById('nav-btn')
+  .addEventListener('click', openMobileMenuHandler);
+document
+  .getElementById('close-btn')
+  .addEventListener('click', closeMobileMenuHandler);
 
 // Validate Contact Form
 const form = document.querySelector('.contact-form');
-const email = document.querySelector('#email');
-const error = document.querySelector('#error');
+const emailInput = document.querySelector('#email');
+const errorContainer = document.querySelector('#error');
 const errorMessage = '** Please write your email address in lowercase **';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const userEmail = email.value;
+  const userEmail = emailInput.value;
   if (userEmail !== userEmail.toLowerCase()) {
-    error.style.display = 'block';
-    error.innerHTML = errorMessage;
+    errorContainer.style.display = 'block';
+    errorContainer.innerHTML = errorMessage;
   } else {
-    error.innerHTML = '';
+    errorContainer.innerHTML = '';
     form.submit();
   }
 });
