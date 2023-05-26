@@ -1,41 +1,30 @@
-const openMobileMenu = function openMobileMenuHandler() {
-  const mobileMenu = document.querySelector('.mobile-menu');
-  mobileMenu.style.display = 'block'; // Show the mobile menu
-};
-
-const closeMobileMenu = function closeMobileMenuHandler() {
-  const mobileMenu = document.querySelector('.mobile-menu');
-  mobileMenu.style.display = 'none'; // Hide the mobile menu
-};
-
-document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
-document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
-
-// Local Storage
-const form = document.querySelector('.contact-form');
-const fullName = document.querySelector('#name');
-const email = document.querySelector('#email');
-const message = document.querySelector('#message');
+const contactForm = document.querySelector('.contact-form');
+const fullNameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
 const contactDetails = {
-  userName: String,
-  userEmail: String,
-  userMsg: String,
+  userName: '',
+  userEmail: '',
+  userMsg: '',
 };
 
-form.addEventListener('input', () => {
-  contactDetails.userName = fullName.value;
-  contactDetails.userEmail = email.value;
-  contactDetails.userMsg = message.value;
+const handleFormInput = () => {
+  contactDetails.userName = fullNameInput.value;
+  contactDetails.userEmail = emailInput.value;
+  contactDetails.userMsg = messageInput.value;
 
   localStorage.setItem('contactDetails', JSON.stringify(contactDetails));
-});
+};
 
-window.onload = () => {
+const populateFormInputs = () => {
   const contactData = JSON.parse(localStorage.getItem('contactDetails'));
 
   if (contactData) {
-    fullName.value = contactData.userName;
-    email.value = contactData.userEmail;
-    message.value = contactData.userMsg;
+    fullNameInput.value = contactData.userName;
+    emailInput.value = contactData.userEmail;
+    messageInput.value = contactData.userMsg;
   }
 };
+
+contactForm.addEventListener('input', handleFormInput);
+window.addEventListener('load', populateFormInputs);
