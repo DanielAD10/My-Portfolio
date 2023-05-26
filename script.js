@@ -11,15 +11,15 @@ const closeMobileMenu = function closeMobileMenuHandler() {
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
 
-//Local Storage
-const form = document.querySelector(".contact-form");
-const fullName = document.querySelector("#name");
-const email = document.querySelector("#email");
-const message = document.querySelector("#message");
+// Local Storage
+const form = document.querySelector('.contact-form');
+const fullName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
 const contactDetails = {
   userName: String,
   userEmail: String,
-  userMsg: String
+  userMsg: String,
 };
 
 form.addEventListener('input', () => {
@@ -28,14 +28,14 @@ form.addEventListener('input', () => {
   contactDetails.userMsg = message.value;
 
   localStorage.setItem('contactDetails', JSON.stringify(contactDetails));
-})
+});
 
 window.onload = () => {
   const contactData = JSON.parse(localStorage.getItem('contactDetails'));
 
-  if(contactData) {
+  if (contactData) {
     fullName.value = contactData.userName;
     email.value = contactData.userEmail;
     message.value = contactData.userMsg;
   }
-}
+};
