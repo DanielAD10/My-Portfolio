@@ -478,6 +478,12 @@ body {
   width: 100%;
 }
 
+#error {
+  color: #ff6163;
+  display: none;
+  padding: 5px;
+}
+
 .submit-btn {
   margin: 0;
 }
