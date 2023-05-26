@@ -9,16 +9,11 @@ const closeMobileMenu = function closeMobileMenuHandler() {
 };
 
 const openDetailView = function openDetailHandler() {
-  const detailView = document.querySelector('.detail');
-  detailView.style.display = 'block'; // Show the mobile detail view
-};
-
-const closeDetailView = function closeDetailHandler() {
-  const detailView = document.querySelector('.detail');
-  detailView.style.display = 'none'; // Hide the mobile menu
-};
+  const detailView = document.querySelector('.detail-container');
+  detailView.style.display = 'block';
+}
 
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
-document.getElementById('card-btn').addEventListener('click', openDetailView);
-document.getElementById('close-card').addEventListener('click', closeDetailView);
+document.querySelector("#card-btn").addEventListener('click', openDetailView);
+

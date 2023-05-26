@@ -1,33 +1,20 @@
 import { detail } from './data.js';
 
-const generateDetailHTML = (detail) => {
-  const { image, title, tags, text } = detail;
-  const tagsHTML = tags
-    .map((tag) => `<li class="list-items">${tag}</li>`)
-    .join('');
-  const detailHTML = `
-    <div class="detail">
-      <div class="detail-container">
-        <img src="${icon}" alt="${title} logo">
-      </div>
-      <div class="box">
-        <h2 class="text common-text">${title}</h2>
-        <ul class="about-list-box">
-          ${tagsHTML}
-        </ul>
-      </div>
-    </div>
-  `;
+const openDetailView = function openDetailHandler() {
+  const detailView = document.querySelector('.detail-container');
+  // const blurOverlay = document.createElement('div');
+  // blurOverlay.classList.add('blur-overlay');
+  // document.body.appendChild(blurOverlay);
 
-  return detailHTML;
+  detailView.style.display = 'block';
+}; 
+
+const closeDetailView = function closeDetailHandler() {
+  const blurOverlay = document.querySelector('.blur-overlay');
+  const detailView = document.querySelector('.detail');
+  detailView.style.display = 'none'; 
+  blurOverlay.remove();
 };
 
-const displayAboutCards = () => {
-  const cardWorkflow = document.querySelector('#about-workflow');
-  aboutcards.forEach((aboutcard) => {
-    const cardHTML = generateAboutCardHTML(aboutcard);
-    cardWorkflow.insertAdjacentHTML('beforeend', cardHTML);
-  });
-};
-
-displayAboutCards();
+document.querySelector('#card-btn').addEventListener('click', openDetailView); // Show the detail view
+document.querySelector('#close-card').addEventListener('click', closeDetailView); //Hide the detail view
