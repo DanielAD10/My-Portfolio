@@ -9,9 +9,12 @@ const closeMobileMenu = function closeMobileMenuHandler() {
 };
 
 const openDetailView = function openDetailHandler() {
-  const detailView = document.querySelector('.detail-container');
+  const detailView = document.querySelector('.detail');
+  const overlay = document.createElement('div');
   detailView.style.display = 'block';
-}
+  overlay.classList.add('overlay');
+  document.body.appendChild(overlay);
+}; 
 
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
