@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="container">
@@ -26,20 +25,24 @@
 
         </nav>
     </header>
-    <!-- mobile-menu -->
+
+    
     <div class="mobile-menu hidden" id="close-btn" onclick="closeMobileMenu()">
         <div class="mobile-menu-container">
             <div class="close-btn" onclick="closeMobileMenu()">
                 <i class="fas fa-times"></i>
             </div>
-            <!-- Content of the mobile menu -->
+            
             <ul class="mobile-menu-list">
-                <li class="mobile-menu-list-items"><a href="#recent-works"  onclick="closeMobileMenu()">Portfolio</a></li>
-                <li class="mobile-menu-list-items"><a href="#aboutme-section" onclick="closeMobileMenu()">About</a></li>
-                <li class="mobile-menu-list-items"><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li class="mobile-menu-list-items"><a href="#recent-works" >Portfolio</a></li>
+                <li class="mobile-menu-list-items"><a href="#aboutme-section" >About</a></li>
+                <li class="mobile-menu-list-items"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
+    
+    <div id="detail-container"></div>
+
     <main class="main-container">
         <section class="headline-container headline-background">
             <h2 class="primary-text">Hey there.
@@ -67,80 +70,7 @@
                 <h2 class="primary-text work-text">My Recent Works</h2>
                 <img src="assets/images/indicator.svg" alt="">
             </div>
-            <div class="card-workflow">
-                <div class="card">
-                    <div class="text-box">
-                        <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="text-box">
-                        <h1 class="text">Multi-Post Stories Gain+Glory</h1>
-                        <ul class="list-box">
-                            <li class="list-items">Ruby on Rails</li>
-                            <li class="list-items">CSS</li>
-                            <li class="list-items">JavaScript</li>
-                            <li class="list-items">HTML</li>
-                        </ul>
-                        <button class="btn card-btn">See Project</button>
-                    </div>
-                </div>
-            </div>
+            <div id="card-workflow" class="card-workflow"></div>
         </section>
         <section class="section-container"  id="aboutme-section">
             <div class="about-me-background">
@@ -149,65 +79,12 @@
                     <p class="third-text about-me-2"> I can help you build a product , feature or website Look through
                         some of my work and experience! If you like what you see and have a project you need coded,
                         don’t hesitate to contact me.</p>
-                    <button class="btn card-btn about-me-3">Get my resume</button>
+                    <button id="card-btn" class="btn card-btn about-me-3">Get my resume</button>
                 </div>
             </div>
-            <div class="card-workflow">
-                <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/language.svg" alt="Language logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Language</h2>
-                        <ul class="common-tags list-box">
-                            <li class="list-items common-tags-items">JavaScript</li>
-                            <li class="list-items common-tags-items">Ruby</li>
-                            <li class="list-items common-tags-items">HTML</li>
-                            <li class="list-items common-tags-items">CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/framework.svg" alt="Frameworks logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Frameworks</h2>
-                        <ul class="common-tags list-box common-box">
-                            <div class="framework-box">
-                                <li class="list-items common-tags-items">React.js</li>
-                                <li class="list-items common-tags-items">Ruby on Rails</li>
-                                <li class="list-items common-tags-items">RSpec</li>
-                            </div>
-                            <div class="framework-box">
-                                <li class="list-items common-tags-items">Capybara</li>
-                                <li class="list-items common-tags-items">Selenium</li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="logo">
-                        <img src="assets/images/skills.svg" alt="Skills logo">
-                    </div>
-                    <div class="box">
-                        <h2 class="text common-text">Skills</h2>
-                        <ul class="common-tags list-box common-box">
-                            <div class="skill-box">
-                                <li class="list-items common-tags-items">Database Management</li>
-                                <li class="list-items common-tags-items">Version Control</li>
-                            </div>
-                            <div class="skill-box">
-                                <li class="list-items common-tags-items">CLI</li>
-                                <li class="list-items common-tags-items">Web Development</li>
-                                <li class="list-items common-tags-items">API Design</li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="card-workflow" id="about-workflow"></div>
         </section>
-        <section class="section-container contact-container" id="contact">
+        <section class="section-container" id="contact">
             <div class="contact-text-container">
                 <h2 class="primary-text contact-text">I'm always interested in hearing about new projects, so if you'd
                     like to chat please get in touch.</h2>
@@ -225,6 +102,7 @@
                 <p>adamsdaniel171@gmail.com</p>
             </div>
         </section>
+       
     </main>
     <footer class="footer">
         <ul class="social-icons">
@@ -237,5 +115,9 @@
         <img class="footer-bar" src="assets/images/footer-bar.svg" alt="Footer">
     </footer>
     <script src="script.js"></script>
+    <script type="module" src="detail.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="works.js"></script>
+    <script type="module" src="about.js"></script>
 </body>
 </html>
