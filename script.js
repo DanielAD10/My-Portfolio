@@ -1,12 +1,12 @@
 const openMobileMenu = () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.style.display = 'block'; // Show the mobile menu};
-}
+};
 
 const closeMobileMenu = () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.style.display = 'none'; // Hide the mobile menu};
-}
+};
 
 const openDetailView = () => {
   const detailView = document.querySelector('.detail');
@@ -15,17 +15,17 @@ const openDetailView = () => {
   overlay.classList.add('overlay');
   document.body.appendChild(overlay);
 };
-  
-document
-        .getElementById('nav-btn')
-        .addEventListener('click', openMobileMenu);
 
 document
-        .getElementById('close-btn')
-        .addEventListener('click', closeMobileMenu);
+  .getElementById('nav-btn')
+  .addEventListener('click', openMobileMenu);
+
 document
-        .querySelector('#card-btn')
-        .addEventListener('click', openDetailView);
+  .getElementById('close-btn')
+  .addEventListener('click', closeMobileMenu);
+document
+  .querySelector('#card-btn')
+  .addEventListener('click', openDetailView);
 
 // Validate Contact Form
 const contactForm = document.querySelector('.contact-form');
