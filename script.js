@@ -19,3 +19,21 @@ const openDetailView = function openDetailHandler() {
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
 document.querySelector('#card-btn').addEventListener('click', openDetailView);
+
+// Validate Contact Form
+const form = document.querySelector('.contact-form');
+const emailInput = document.querySelector('#email');
+const errorContainer = document.querySelector('#error');
+const errorMessage = '** Please write your email address in lowercase **';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const userEmail = emailInput.value;
+  if (userEmail !== userEmail.toLowerCase()) {
+    errorContainer.style.display = 'block';
+    errorContainer.innerHTML = errorMessage;
+  } else {
+    errorContainer.innerHTML = '';
+    form.submit();
+  }
+});
