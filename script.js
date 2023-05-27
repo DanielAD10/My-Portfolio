@@ -28,6 +28,7 @@ const populateFormInputs = () => {
 
 contactForm.addEventListener('input', handleFormInput);
 window.addEventListener('load', populateFormInputs);
+
 const openMobileMenuHandler = () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.style.display = 'block'; // Show the mobile menu
