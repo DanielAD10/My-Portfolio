@@ -2,32 +2,32 @@ export const workcards = [
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML']
+    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 ];
 
@@ -51,8 +51,8 @@ export const aboutcards = [
       'CLI',
       'Web Development',
       'API Design',
-    ]
-  }
+    ],
+  },
 ];
 
 export const detail = [

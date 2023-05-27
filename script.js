@@ -14,9 +14,8 @@ const openDetailView = function openDetailHandler() {
   detailView.style.display = 'block';
   overlay.classList.add('overlay');
   document.body.appendChild(overlay);
-}; 
+};
 
 document.getElementById('nav-btn').addEventListener('click', openMobileMenu);
 document.getElementById('close-btn').addEventListener('click', closeMobileMenu);
-document.querySelector("#card-btn").addEventListener('click', openDetailView);
-
+document.querySelector('#card-btn').addEventListener('click', openDetailView);

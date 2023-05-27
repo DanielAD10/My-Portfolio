@@ -2,9 +2,9 @@ import { detail } from './data.js';
 
 const closeDetailView = function closeDetailHandler() {
   const overlay = document.querySelector('.overlay');
-  document.querySelector(".detail").style.display = 'none';
+  document.querySelector('.detail').style.display = 'none';
   overlay.remove();
-}
+};
 
 const generateDetailView = (data) => {
   const detailView = document.createElement('div');
@@ -20,7 +20,7 @@ const generateDetailView = (data) => {
 
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
-  
+
   const title = document.createElement('h3');
   title.classList.add('detail-text-header');
   title.id = 'detail-title';
@@ -43,7 +43,7 @@ const generateDetailView = (data) => {
       'JavaScript',
       'Bootstrap',
       'Terminal',
-      'Codepen'
+      'Codepen',
     );
   } else {
     allowedTags.push('Ruby on Rails', 'CSS', 'Javascript');
@@ -104,7 +104,7 @@ const generateDetailView = (data) => {
   btnContainer.appendChild(sourceBtn2);
 
   const headerBox = document.createElement('div');
-  headerBox.classList.add('detail-header-box')
+  headerBox.classList.add('detail-header-box');
 
   const textContainer = document.createElement('div');
   textContainer.classList.add('detail-text-container');
@@ -122,7 +122,7 @@ const generateDetailView = (data) => {
     textContainer.appendChild(paragraph);
     textContainer.appendChild(btnContainer);
   }
-  
+
   detailViewContainer.appendChild(closeButton);
   detailViewContainer.appendChild(imageContainer);
   detailViewContainer.appendChild(textContainer);

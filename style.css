@@ -239,6 +239,7 @@ body {
     display: none;
   }
 }
+
 .overlay {
   position: fixed;
   z-index: 9998;
