@@ -13,7 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -105,9 +105,15 @@ The project is deployed at the following link...
 
 👤 **Author2**
 
-- GitHub: [@rcniyigena](https://github.com/githubhandle)
+- GitHub: [@rcniyigena](https://github.com/rcniyigena)
 - Twitter: [@EricNiyigena6](https://twitter.com/EricNiyigena6)
 - LinkedIn: [Eric Niyigena](https://www.linkedin.com/in/eric-niyigena250/)
+
+👤 **Author3**
+
+- GitHub: [@RileyManda](https://github.com/RileyManda)
+- Twitter: [@rileycodez](https://twitter.com/rileycodez)
+- LinkedIn: [Riley M.](https://www.linkedin.com/in/rileymanda/)
 
 
 
